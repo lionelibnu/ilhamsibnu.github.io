@@ -90,11 +90,30 @@ body{
     #welkam {
         margin-left: 10px; 
     }
+    
     .container{
         margin-left: -50px;
         flex-direction: column;
         height: auto;
         align-items: center;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        margin-left: 30%;
+    }
+    .container img {
+        width: 130%;
+        margin-left: 100px;
+    }
+    .about{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .about img{
+        width: 100%;
     }
 }
 .about{
@@ -103,7 +122,7 @@ body{
     color: #ffffff;
     height: 600px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding-right: 40px;
 }
@@ -128,14 +147,7 @@ body{
     font-size: 16px;
     padding-right: 20px;
 }
-footer {
-    background-color:#00765a; 
-    color:#ffffff;           
-    text-align: center;       
-    padding: 0px 30px;                   
-    width: 100%;     
-    height: auto;                    
-}
+
 .nav-link {
     color: #00765a;
     margin-right: 100px;
@@ -201,6 +213,99 @@ footer {
     color: #ffffff;
 }
 
+#imel{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+}
+#imel h3{
+    font-weight: bold;
+    color: #00765a;
+}
+form{
+    width: 40%;
+    color:#00765a;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(135, 133, 133, 0.7);    
+}
+.isiemail{
+    width: 90%;
+}
+.isiemail input{
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #00765a;
+    padding: 3px;
+    width: 35%;
+    margin-bottom: 20px;
+}
+.isiemail button{
+    background-color: #00765a;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 7px;
+    border-color: #ffffff;
+    color: #ffffff;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+.isiemail button:hover{
+    background-color:#03daa7;
+}
+#komentar{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+}
+#komentar label{
+    text-align: right;
+}
+#komentar textarea{
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #00765a;
+    padding: 3px;
+    margin-left: 2px;
+    border-radius: 2px;
+}
+.kontak{
+    width: 40%;
+    background-color:#ffffff;
+    border: 1px solid;
+    border-color: #00765a;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+#sosmed{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+#sosmed a{
+    text-decoration: none;
+
+}
+
+.gmbrsos{
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /
+}
+footer {
+    background-color:#00765a; 
+    color:#ffffff;           
+    text-align: center;       
+    padding: 5px;                   
+    width: 100%;     
+    height: 40px;                    
+}
+
 @media (max-width: 768px){
     .about{
             justify-content: center;
@@ -214,5 +319,20 @@ footer {
     }
     .about img{
         display: none;
+    }
+    #imel{
+        display: block;
+    }
+    form{
+        width: 80%;
+        margin-left: 35px;
+    }
+    .isiemail{
+        display:inline;
+        font-size: 50%;
+    }
+    .kontak{
+        width: 80%;
+        margin-left: 35px;
     }
 }

@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projek</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styling.css">
+    
+
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <span id="welkam">Selamat Datang</span>
@@ -36,7 +39,7 @@
 
     <!--beranda-->
     <main class="container ">
-        <div class="konten">
+        <div data-aos="fade-right" class="konten">
             <div class="box">
             <p id="Hello">Hello I'm</p>
             </div>
@@ -53,7 +56,7 @@
     <!--About-->
     <div class="about" id="abot">
         <img src="gambar/porsche.png">
-        <div class="teksabout" id="hijau">
+        <div data-aos="fade-left" class="teksabout" id="hijau">
             <h3 class="abt"  style="font-weight: bold;"" >About Me</h3>
                 <div class="strip"></div>
             <p id="text">
@@ -76,9 +79,9 @@
         <h3 id="port"">Portofolio</h3>
         <div class="row justify-content-center">
             <!--Porto1-->
-            <div class="col">
+            <div data-aos="flip-left" class="col">
                 <div class="card h-100">
-                    <img src="gambar/landingpage.png" class="img-fluid rounded">
+                    <img src="gambar/landing.png" class="img-fluid rounded">
                     <div class="card-body">
                         <a href="landingpage.html" target="_blank" class="card-title stretched-link">
                             Landing Page                        
@@ -91,7 +94,7 @@
                     </div>    
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="flip-left" class="col">
                 <div class="card h-100">
                     <img src="gambar/daftarmakanan.png" class="img-fluid rounded">
                     <div class="card-body">
@@ -106,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="flip-left" class="col">
                 <div class="card h-100">
                     <img src="gambar/hottel (2).png" class="img-fluid rounded">
                     <div class="card-body">
@@ -122,22 +125,55 @@
         </div>
     </div>
     <!--endprojek-->
-    <!--Footer-->
-    <footer>
-        <div class="contact">
-            <p>Email: <a href="mailto:milhamsibnup@gmail.com">milhamsibnup@gmail.com</a></p>
-            <div id="imgfoot">
-                <a href="https://x.com/IbnuLionel37071/photo" target="_blank" aria-label="Twitter">
-                    <img id="gmbr" src="gambar/twitter.png" alt="Twitter">
+
+    <!--email-->
+    <div id="imel">
+        <form action="https://formspree.io/f/xlddodop" method="post">
+            <h8 class="text-body-secondary mb-0">Contact us</h8>
+            <h3 class="mb-3"> Hubungi saya disini</h3>
+            <div class="isiemail">
+                <label>Nama :</label>
+                <input type="text" placeholder="Nama anda">
+                <label>Email :</label>
+                <input type="email" name="email" placeholder="alamat Email">
+                <div id="komentar">
+                    <label for="komentar">Pesan :</label><br>
+                    <textarea name="message" placeholder="Pesan yang ingin disampaikan" rows="3" cols="40"></textarea>
+                </div>
+                <br>
+                <button type="submit"> Kirim </button>
+            </div>
+        </form>
+        <div class="kontak">
+            <h3>Sosial Media</h3>
+            <p>Berikut merupakan social media yang saya miliki
+                silahkan klik untuk menghubungi saya via media sosial
+            </p>
+            <div id="sosmed">
+                <a href="https://www.instagram.com/ilhms27/profilecard/?igsh=ZDhjMnczZGg1d2lj">
+                <img class="gmbrsos" src="gambar/pngwing.com (12).png"><br>
                 </a>
-                <a href="https://www.instagram.com/ilhms27/profilecard/?igsh=ZDhjMnczZGg1d2lj" target="_blank" aria-label="Instagram">
-                    <img id="gmbr" src="gambar/ig.png" alt="Instagram">
-                </a>
+                <a href="https://github.com/lionelibnu">
+                    <img class="gmbrsos" src="gambar/pngwing.com (11).png">
+                    </a>
+                <a href="https://telegram.org/dl">
+                    <img class="gmbrsos" src="gambar/tele (2).png">
+                    </a>
             </div>
         </div>
+    </div>
+    <!--end-->
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2025 lionelibnu</p>
     </footer>
     
     <!--end-->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
